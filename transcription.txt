@@ -1,0 +1,68 @@
+1) Hi there!
+My name is Sakhan and in this video I'll speak about JavaScript library - React.
+2) Just two words before we start:
+First of all I need to say sorry because my English is not as good as I would like to, but to be fair it could have been worse,
+ and when you will hear my mistakes just excuse me - it is not my first language.
+Second of all - this presentation and video is my student project for RS School.
+And since I am a student, you will hear and see only the basic information about React.
+3) Nothing special, just a little bit of history of creation, few words about who,when and why created this library. Main principles and benefits of React.
+Ok, lets get started. 
+4) React was developed in 2011.  It is the product of Facebook, to be accurate it was developed by software developer of Facebook - Jordan Walke.
+Source code of React was opened on 29 of may 2013 on the conference 'JSConf US'. 
+Since then, 16 major releases and a hundreds minor releases have been issued.
+5) This means that this product has great support and is getting better and better every day. Today it is the most popular JavaScript library.
+6) As you can see on Google Trends React is dominating the space of libraries and frameworks for building user interfaces. I am absolutely sure that everyone of you heard about.
+7) facebook, instagram, netflix, whatsup, dropbox... All of these giants were created on React.
+8) Well, what is React for?
+It is for building fast and interactive user interfaces.
+9) Main principles of React is:
+- Independent, isolated and reusable components
+- High development speed 
+- Ability to render React on the server-side ( It is awesome for SEO) and this will significantly speed up the application in comparison with client-side rendering.
+
+Few words about each of them: 
+10) In the heart of the all React applications are Components. Components is a piece of the user interface.  Every application have at list one root component.
+ This component represent the entire application and contains other child components.  So when building React application we build a bunch of independent,
+ isolated and reusable components and then compose them to build complex user interfaces.
+11) In terms of implementation a component is typically implemented as a JavaScript class. It has some state and a render method. The state is a data that we
+ want to display when component is render. And the render method is responsible for describing what the UI should look like. The output of this render method is a React element
+12) which is a simple JavaScript object that maps DOM elements. It is not a real DOM elements it is a plain JavaScript object that represent that DOM element in memory.
+ So React keeps a lightweight representation of the DOM in memory, which we refere to Virtual DOM. Unlike a real DOM this virtual DOM is cheap to create.
+13) And when we change a state of component - we get a new React element. Then React compare this element and his children with his previous one and figures out what is changed and than
+14) it will update a part of the real DOM to keep it insynk with the virtual DOM. 
+In other words we no longer have to work with the DOM API in brousers. We no longer have to write code and querys and manipulate the DOM or attached event handlers to DOM elements
+ - it is simply change state of components and React will automaticaly update a DOM to match that state.
+15) But what If the state of component is never changes? Here is an example of code.
+In this case we can create such component in more efficient way. We can create a stateless component. And here it is.
+
+16) It is a good practice to use state carefully, because state managment can really get tricky in React in more complex applications and therefore having as many stateless components as possible
+ will make your application perform better and be more managable by you, because changing states of all kind of components really makes your application unpredictable and therefore stateless
+ components are the key to make more predictable, more testable and better performed application.
+
+17) Speaking of the modern React, it is impossible not to mention the topic of Hooks. Hooks are an innovation in React 16.8 that allows you to use state and other features of React without writing classes.
+18) Hooks are big and serious topic that cannot be covered in my presentation, so I will focus only on the main points. If you are really interested in learning React then I advise you to read the official documentation.
+ There you can find everything you need.
+ If we try to understand what hook is, then:
+Hooks are functions with which you can “hook” to the state and methods of the React lifecycle from functional components. React contains several built-in hooks, such as useState, useEffect, useContext,
+ useReducer and many others. You can also create your own hooks to reuse them in your other components. 
+
+19) In this example, useState is a hook. We call it to give the component an internal state. React will store this state between renderings.
+ The useState call returns two things: the current state value and the function to update it. This feature can be used anywhere.
+A state hook can be used in a component more than once. 
+
+20) Moving away from hooks and returning to the benefits of React I need to say about simple syntax. 
+Because of it,  you can always tell how your component will be rendered by looking at the source code.
+21) And thanks to the reuse of the code, it has become much easier to create mobile applications. 
+The code that was written during the creation of the web-site can be used again to create a mobile application.
+
+22) In conclusion - the good points of React is:
+- It is extremely efficient - because of Virtual DOM
+- It makes writing Javascript easier - because React uses a special syntax called JSX (it is a result of combining JavaScript and XML).
+Another good point is:
+- It gives you out-of-the box developer tools - becouse of React.js chrome extension
+- It is awesome for SEO - because of server rendering
+
+And of course, React has some bad points.
+
+23) The bad point is - React is only a view layer. And when building applications with React we need to use other librarys and tools.
+If it is a problem for you - look at framework Angular.

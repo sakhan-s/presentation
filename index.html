@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>React</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="fade">
+					<h2>Hello!</h2>
+					<p>This presentation will be about JavaScript library - React. <p><a href="https://youtu.be/8__6vO4OLkI">Click here for link to the video </a></p></p>
+					<img src="assets/img/react.png">
+				</section>
+				<section data-transition="fade">
+					<p>Two words before we start:</p>
+					<ul>
+						<li>Not perfect English</li>
+						<li>The Rolling Scopes School project (https://rs.school/)</li>
+						<li>Only basic information about React</li>
+					</ul>
+				</section>
+				<section data-transition="fade">
+					<p>What will you see:</p>
+					<ul>
+						<li>Who, when and why created this library</li>
+						<li>Main principles</li>
+						<li>Benefits</li>
+					</ul>
+				</section>
+				<section data-transition="fade">
+					<p>History:</p>
+					<ul>
+						<li>React was created in 2011</li>
+						<li>Product of Facebook (Jordan Walke)</li>
+						<li>Source code was opened on 29 of may 2013 on the conference 'JSConf US'</li>
+					</ul>
+				</section>
+				<section data-transition="fade">
+					<p>Benefits:</p>
+					<ul>
+						<li>Great support</li>
+						<li>Huge popularity</li>
+						<li>Easy to learn</li>
+					</ul>
+				</section>
+				<section data-background-image="assets/img/1.png"></section>
+				<section>
+					<img src="assets/img/facebook.png"></img>
+					<img class="fragment" src="assets/img/instagram.png"></img>
+					<img class="fragment" src="assets/img/netflix.png"></img>
+					<img class="fragment" src="assets/img/whatsapp.png"></img>
+					<img class="fragment" src="assets/img/dropbox.png"></img>
+				</section>
+				<section data-transition="fade">
+					<p>What is React for?</p>
+					<p>For building fast and interactive user interfaces</p>
+				</section>
+				<section data-transition="fade">
+					<p>Main principles:</p>
+					<ul>
+						<li>Independent, isolated and reusable components</li>
+						<li>Ability to render React on the server</li>
+						<li>High development speed</li>
+					</ul>
+				</section>
+				<section>
+					<img src="assets/img/4.png">
+				</section>
+				<section data-transition="fade">
+					<img src="assets/img/5.png">
+				</section>
+				<section data-transition="fade">
+					<img src="assets/img/6.png">
+				</section>
+				<section data-transition="fade">
+					<img src="assets/img/7.png">
+				</section>
+				<section data-transition="fade">
+					<img src="assets/img/8.png">
+				</section>
+				<section data-trim data-noescape>
+					<p>Example of code that does not need the state</p>
+					<pre><code>
+import React from "react";
+
+export class Header extends React.Component {
+  render() {
+    return (
+      <nav class="navigation">
+        <ul class="navigation__items">
+          <li class="navigation__item"><a href="#">Home</a></li>
+          <li class="navigation__item"></li>
+        </ul>
+      </nav>
+    );
+  }
+}
+					</code></pre>
+				</section>
+				<section data-trim data-noescape>
+					<p>Efficient way to write code with stateless component</p>
+					<pre><code>
+import React from "react";
+
+export const Header = (props) => {
+    return (
+      <nav class="navigation">
+        <ul class="navigation__items">
+          <li class="navigation__item"><a href="#">{props.homeLink}</a></li>
+          <li class="navigation__item"></li>
+        </ul>
+      </nav>
+    );
+}
+					</code></pre>
+				</section>
+				<section>
+					<h2>React Hooks</h2>
+				</section>
+				<section>
+					<p>React Hooks:</p>
+					<ul>
+						<li>Hooks are allows you to use state and other features of React without writing classes.</li>
+						<li>https://ru.reactjs.org/docs/hooks-intro.html</li>
+					</ul>
+				</section>
+				<section data-trim data-noescape>
+					<p>useState hook</p>
+					<img src="assets/img/9.png">
+				</section>
+				<section data-trim data-noescape>
+					<p>Easy to tell how your component will be rendered by looking at the source code</p>
+					<pre><code>
+class Hello extends React.Component {
+  render() {
+    return <h1>hello world!</h1>;
+  }
+}
+					</code></pre>
+					<img src="assets/img/2.png">
+				</section>
+				<section data-transition="fade">
+					<img src="assets/img/3.jpg">
+				</section>
+				<section data-transition="fade">
+					<p>Good points:</p>
+					<ul>
+						<li>It is extremely efficient</li>
+						<li>It makes writing Javascript easier</li>
+						<li>It gives you out-of-the box developer tools</li>
+						<li>It is awesome for SEO</li>
+					</ul>
+				</section>
+				<section>
+					<p>Bad point:</p>
+					<ul>
+						<li>React is only a view layer</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
